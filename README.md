@@ -22,7 +22,7 @@
 | 🌳 Деревья поиска (BST) | 5 |
 | 🗺 Графы: DFS и BFS | 7 |
 | 🔤 Строки | 1 |
-
+| ➕ Математика | 1 |
 ---
 
 
@@ -48,6 +48,7 @@
 | [27. Remove Element](https://leetcode.com/problems/remove-element/) | 🟢 Easy | `fast` перебирает массив, все значения, не равные `val`, копируются на позицию `slow`. |
 | [75. Sort Colors](https://leetcode.com/problems/sort-colors/) | 🟡 Medium | Три указателя `low`, `mid`, `high` (задача про флаг Нидерландов): нули уходят влево, двойки вправо, единицы остаются посередине. Один проход. |
 | [15. 3Sum](https://leetcode.com/problems/3sum/) | 🟡 Medium | Сортируем массив, фиксируем первое число, а пару к нему ищем двумя указателями, как в Two Sum II. Дубликаты пропускаем, чтобы тройки не повторялись. |
+
 
 ### 🪟 Скользящее окно
 
@@ -130,6 +131,12 @@
 | [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | 🟢 Easy | Сдвигаем окно длиной `needle` по `haystack` и сравниваем подстроку с `needle`. Первое совпадение даёт индекс, иначе -1. |
 
 ---
+
+### ➕ Математика
+| Задача | Сложность | Идея решения |
+| --- | --- | --- |
+| 9. Palindrome Number(https://leetcode.com/problems/palindrome-number/description/) |
+🟢 Easy | Получаем младший разряд числа x с помощью % 10 и добавляем его к перевёрнутому числу reversed, предварительно сдвигая существующие цифры на один разряд влево. В конце сравниваем исходное число с перевёрнутым. |
 
 ## 🧩 Не только LeetCode
 
