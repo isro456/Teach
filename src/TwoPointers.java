@@ -157,4 +157,20 @@ public static int lengthOfLongestSubstring(String s)
         return count;
 
 }
+    public boolean isPalindrome(int x) 
+    {
+        int original = x;
+        int reversed = 0;
+
+        while(x > 0)
+        {
+            int digit = x % 10;
+            reversed = reversed * 10 + digit;
+            x = x / 10;
+        }
+        System.out.println(original);
+        System.out.println(reversed);
+        return original == reversed;
+    
+    }
 }
